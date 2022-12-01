@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ARCH模型和GARCH模型</title>
+      <link href="/post/46f6f630.html"/>
+      <url>/post/46f6f630.html</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span><h1 id="ARCH模型（自回归条件异方差模型）"><a href="#ARCH模型（自回归条件异方差模型）" class="headerlink" title="ARCH模型（自回归条件异方差模型）"></a>ARCH模型（自回归条件异方差模型）</h1><p>==<strong>Autoregressivee Conditional Heteroskedastic Model</strong>==<br>简称为 ==条件异方差模型==<br><img src="https://obsidian-1314863343.cos.ap-beijing.myqcloud.com/obsidian/pic/20221119104620.png"><br><img src="https://obsidian-1314863343.cos.ap-beijing.myqcloud.com/obsidian/pic/20221119110919.png"><br>上面红框中的计算结果是因为：因为${\varepsilon _t}$是平稳列， 所以$Var(\varepsilon _t)=\mathbb{E}\left(\sigma_t^2\right)$为常数。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/post/0.html"/>
+      <url>/post/0.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://obsidian-1314863343.cos.ap-beijing.myqcloud.com/obsidian/pic/20221118213144.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/post/0.html"/>
+      <url>/post/0.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="配对交易特点"><a href="#配对交易特点" class="headerlink" title="配对交易特点"></a>配对交易特点</h1><blockquote><p>第一，配对交易利用了两个<a href="https://wiki.mbalib.com/wiki/%E8%B5%84%E4%BA%A7" title="资产">资产</a>的短暂<a href="https://wiki.mbalib.com/wiki/%E4%BB%B7%E6%A0%BC" title="价格">价格</a>偏离的对称性，进行<a href="https://wiki.mbalib.com/wiki/%E5%AF%B9%E5%86%B2" title="对冲">对冲</a>以获取两个资产的Alpha收益，其核心假设是配对资产的价差具有均值回复性。而这种均值回复是以交易者的非理性行为相关的。因为当<a href="https://wiki.mbalib.com/wiki/%E5%B8%82%E5%9C%BA" title="市场">市场</a>中存在大量这类想法的交易者时，<a href="https://wiki.mbalib.com/wiki/%E8%82%A1%E7%A5%A8%E4%BB%B7%E6%A0%BC" title="股票价格">股票价格</a>会产生上升的惯性，但这种上升惯性仅仅由于这一个非理性因素所驱动，并没有具体实际的<a href="https://wiki.mbalib.com/wiki/%E5%9F%BA%E6%9C%AC%E9%9D%A2" title="基本面">基本面</a>因素支撑，因而<a href="https://wiki.mbalib.com/wiki/%E8%82%A1%E4%BB%B7" title="股价">股价</a>很快会跌落。相反，股价下跌的<a href="https://wiki.mbalib.com/wiki/%E8%82%A1%E7%A5%A8" title="股票">股票</a>也会产生下跌的惯性，当市场的理性因素占据主导时，价格又回复到原先的水平。而如果交易者能够采用配对交易策略，就可以获得这两项<a href="https://wiki.mbalib.com/wiki/%E8%B5%84%E4%BA%A7%E4%BB%B7%E6%A0%BC" title="资产价格">资产价格</a>偏离的收益了。在实际操作中，其执行过程可以简单地描述为：<a href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E8%80%85" title="投资者">投资者</a>首先选择相互匹配的两个资产，**==当配对资产价格差异增加的时候，做多价格偏低的资产，同时做空价格偏高的资产，而当<a href="https://wiki.mbalib.com/wiki/%E4%BB%B7%E6%A0%BC%E5%B7%AE%E5%BC%82" title="价格差异">价格差异</a>减小的时候，则结束头寸，完成交易==**；同时，为了<a href="https://wiki.mbalib.com/wiki/%E6%8E%A7%E5%88%B6" title="控制">控制</a>风险，当价差进一步扩大时，<a href="https://wiki.mbalib.com/wiki/%E9%9C%80%E8%A6%81" title="需要">需要</a>在适当的<a href="https://wiki.mbalib.com/wiki/%E6%AD%A2%E6%8D%9F%E7%82%B9" title="止损点">止损点</a>结束头寸。</p></blockquote><blockquote><p>第二，配对交易是一种市场中性的交易策略。当观察到配对的资产价格差异增大到一定程度时，对价格上升的资产建立<a href="https://wiki.mbalib.com/wiki/%E7%A9%BA%E5%A4%B4" title="空头">空头</a>，对价格下跌的资产建立多头。在<a href="https://wiki.mbalib.com/wiki/%E4%B8%80%E4%BB%B7%E5%AE%9A%E5%BE%8B" title="一价定律">一价定律</a>的作用下，配对资产的价格差异将很快减小。这时，再买入价格下跌的资产对冲之前建立的<a href="https://wiki.mbalib.com/wiki/%E7%A9%BA%E5%A4%B4%E5%A4%B4%E5%AF%B8" title="空头头寸">空头头寸</a>，同时卖出价格上涨的<a href="https://wiki.mbalib.com/wiki/%E8%B5%84%E4%BA%A7" title="资产">资产</a>，获取两项资产的<a href="https://wiki.mbalib.com/wiki/%E6%94%B6%E7%9B%8A" title="收益">收益</a>。就整个过程来看，配对交易在单一资产上都有<a href="https://wiki.mbalib.com/wiki/%E7%B3%BB%E7%BB%9F%E9%A3%8E%E9%99%A9" title="系统风险">系统风险</a>和<a href="https://wiki.mbalib.com/wiki/%E4%B8%AA%E5%88%AB%E9%A3%8E%E9%99%A9" title="个别风险">个别风险</a>，但由于头寸始终是相反的，因此系统风险完全对冲，配对交易整体上只承担了配对资产的个别风险。而在一价定律下，<a href="https://wiki.mbalib.com/wiki/%E4%BB%B7%E6%A0%BC" title="价格">价格</a>对于<a href="https://wiki.mbalib.com/wiki/%E4%BB%B7%E5%80%BC" title="价值">价值</a>的回复使得配对的资产的个别风险直接转换为个别收益。这种收益是于市场无关的。</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/post/4a17b156.html"/>
+      <url>/post/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
